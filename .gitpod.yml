@@ -1,3 +1,4 @@
+
 tasks:
 
 # Install Salesforce CLI trough NPM
@@ -6,4 +7,10 @@ tasks:
       npm install sfdx-cli --global
   command: |
       npm install @salesforce/cli --global
-     
+      sfdx --version
+
+
+vscode:
+  extensions:
+    - salesforce.salesforcedx-vscode
+    - salesforce.salesforcedx-vscode-expanded
