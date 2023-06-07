@@ -8,7 +8,8 @@ tasks:
   command: |
       npm install @salesforce/cli --global
       sfdx --version
-
+      sfdx autocomplete
+      printf "eval $(sfdx autocomplete script bash)" >> ~/.bashrc; source ~/.bashrc
 
 vscode:
   extensions:
