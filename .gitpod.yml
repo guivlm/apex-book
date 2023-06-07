@@ -4,9 +4,8 @@ tasks:
 - name: 'Install Salesforce CLI'
   before: |
       wget https://developer.salesforce.com/media/salesforce-cli/sfdx/channels/stable/sfdx-linux-x64.tar.xz
-      mkdir sfdx
   init: |
+      mkdir sfdx
       tar xJf sfdx-linux-x64.tar.xz -C ~/sfdx --strip-components 1
   command: |
-      rm -r sfdx-linux-x64.tar.xz 
       ~/sfdx/bin/sfdx version
